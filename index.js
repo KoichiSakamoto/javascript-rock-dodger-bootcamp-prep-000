@@ -137,7 +137,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   while (Game.firstChild) {
-      Game.removeChild(myNode.firstChild);
+      Game.removeChild(Game.firstChild);
     }
 }
 
