@@ -140,6 +140,8 @@ function endGame() {
   for (var i = 0; i < ROCKS.length; i++){
     ROCKS[i].remove()
   }
+
+  window.removeEventListener('keydown', moveDodger)
 }
 
 function moveDodger(e) {
