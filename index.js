@@ -136,7 +136,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-
+  console.log(`${GAME.getElementById('.rock')}`)
 }
 
 function moveDodger(e) {
