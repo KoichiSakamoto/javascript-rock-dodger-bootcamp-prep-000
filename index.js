@@ -105,7 +105,7 @@ function createRock(x) {
 
        }
        else {
-         ROCKS[0].remove()
+         rock.remove()
        }
      }
 
