@@ -138,7 +138,7 @@ function endGame() {
   clearInterval(gameInterval)
 
   var game = GAME
-  console.log(`${document.querySelector('rock')}`)
+  console.log(`${document.querySelector('.rock')}`)
 }
 
 function moveDodger(e) {
