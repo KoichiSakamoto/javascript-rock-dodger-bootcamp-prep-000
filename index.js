@@ -137,7 +137,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
 
-  while (document.querySelector('.rock') != null) {
+  for (var i = 0; i < ROCKS.length; i++){
     document.querySelector('.rock').remove()
   }
 }
