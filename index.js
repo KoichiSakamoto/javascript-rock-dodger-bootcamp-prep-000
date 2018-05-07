@@ -136,10 +136,11 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-  var Game = GAME
-  while (Game.firstChild) {
-      Game.removeChild(Game.firstChild);
-    }
+
+  while (GAME.firstChild) {
+    var rock = GAME.firstChild
+    rock.remove()
+  }
 }
 
 function moveDodger(e) {
