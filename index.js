@@ -88,13 +88,13 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     if (checkCollision(rock)) {
-       endGame()
-     }
      var top = 0
 
      function step() {
        rock.style.top = `${top += 2}px`
+       if (checkCollision(rock)) {
+         endGame()
+       }
 
        if (top < 360) {
          window.requestAnimationFrame(step)
