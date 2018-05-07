@@ -83,7 +83,7 @@ function createRock(x) {
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock() {
+  function moveRock(rock) {
     // implement me!
     // (use the comments below to guide you!)
     /**
