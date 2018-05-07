@@ -106,7 +106,7 @@ function createRock(x) {
 
        }
        else {
-         GAME.removeChild('.rock')
+         ROCKS[0].remove()
        }
      }
 
