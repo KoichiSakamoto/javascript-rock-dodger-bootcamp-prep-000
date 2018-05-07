@@ -170,6 +170,7 @@ function moveDodgerLeft() {
    */
    function step() {
      DODGER.style.left = `${DODGER.style.left -= 4}px`
+     window.requestAnimationFrame(step)
    }
 }
 
