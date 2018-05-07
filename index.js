@@ -136,7 +136,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-  var rock = GAME.getElementById(".rock")
+  var rock = document.getElementById(".rock")
   GAME.removeChild(rock)
 }
 
