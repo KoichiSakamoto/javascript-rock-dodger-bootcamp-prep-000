@@ -138,8 +138,7 @@ function endGame() {
   clearInterval(gameInterval)
 
   for (var i = 0; i < ROCKS.length; i++){
-    console.log(`Rock here: ${document.querySelector('.rock')}`)
-    document.querySelector('.rock').remove()
+    ROCKS[i].remove()
   }
 }
 
