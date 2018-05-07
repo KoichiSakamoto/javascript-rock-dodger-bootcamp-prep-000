@@ -94,12 +94,12 @@ function createRock(x) {
 
      function step() {
        rock.style.top = `${top += 2}px`
-       if (checkCollision(rock)) {
-         endGame()
-       }
 
        if (top < 360) {
          window.requestAnimationFrame(step)
+         if (checkCollision(rock)) {
+           endGame()
+         }
        }
        else {
          GAME.removeChild('rock')
