@@ -137,8 +137,9 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
 
-  var game = GAME
-  console.log(`${document.querySelector('.rock')}`)
+  while (document.querySelector('.rock') !== null) {
+    document.querySelector('.rock').remove()
+  }
 }
 
 function moveDodger(e) {
